@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './css/bootstrap.css';
+import './css/base.css';
+import './css/main.css';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
+import '@fortawesome/fontawesome-free/css/all.css';
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

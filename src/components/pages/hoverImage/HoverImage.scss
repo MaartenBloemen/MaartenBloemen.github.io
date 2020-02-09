@@ -1,0 +1,19 @@
+.image-hover {
+  transition-property: opacity,visibility;
+  transition-duration: .5s;
+  transition-timing-function: linear;
+}
+
+.image-invisible {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}

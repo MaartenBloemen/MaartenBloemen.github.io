@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => {
     return (
-        <footer className="footer ">
+        <footer className="footer">
             <div className="col-md-1 pd-l0">
                 <ul className="social">
                     <li><a href="https://www.linkedin.com/in/maarten-bloemen/" target='_blank'><i className="fa fa-linkedin"/></a></li>

@@ -16,9 +16,9 @@ export default () => {
                         <Header/>
                         <Switch>
                             <div className="col-md-9 right-content pd-r0 pd-l0">
+                                <Route path="/" exact component={About}/>
                                 <Route path="/resume" component={Resume}/>
                                 <Route path="/contact" component={Contact}/>
-                                <Route path="/" component={About}/>
                             </div>
                         </Switch>
                     </Router>

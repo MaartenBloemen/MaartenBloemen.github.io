@@ -20,7 +20,7 @@ export default () => {
                         <ul className="clearfix">
                             <li className={activePath === '/' ? 'active' : ''}>
                                 <a href="/" className={activePath === '/' ? 'active' : ''}>
-                                    <i className="fa fa-address-card"/>About me<span>Who am i</span>
+                                    <i className="fa fa-address-card"/>About me<span>Who am I</span>
                                 </a>
                             </li>
                             <li className={activePath === '/resume' ? 'active' : ''}>

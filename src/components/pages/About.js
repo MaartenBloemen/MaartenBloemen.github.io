@@ -35,10 +35,8 @@ export default () => {
                             </div>
                         </div>
                         <p className="lead-intro grey-text">
-                            “ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                            aute irure dolor in reprehenderit in voluptate velit esse ! “
+                            “ Hey, my name is Maarten! Software developer by day, superhero by night!
+                            <br/>Not to worry, lack of sleep of being a superhero won't affect my superb code quality. “
                         </p>
                     </div>
                     <div className="block-content mb-100 pb-30">

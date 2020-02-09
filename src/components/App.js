@@ -12,16 +12,16 @@ export default () => {
         <div className="mt-150 mb-150">
             <div className="container">
                 <div className="row ">
-                    <Header/>
-                    <div className="col-md-9 right-content pd-r0 pd-l0">
-                        <Router>
-                            <Switch>
+                    <Router>
+                        <Header/>
+                        <Switch>
+                            <div className="col-md-9 right-content pd-r0 pd-l0">
                                 <Route path="/resume" component={Resume}/>
                                 <Route path="/contact" component={Contact}/>
                                 <Route path="/" component={About}/>
-                            </Switch>
-                        </Router>
-                    </div>
+                            </div>
+                        </Switch>
+                    </Router>
                     <Footer/>
                 </div>
             </div>

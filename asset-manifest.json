@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.6c55b228.chunk.css",
-    "main.js": "/static/js/main.badab950.chunk.js",
+    "main.js": "/static/js/main.618354e4.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.7e6044aa.js",
     "static/css/2.ead3f5b5.chunk.css": "/static/css/2.ead3f5b5.chunk.css",
     "static/js/2.bb0cac68.chunk.js": "/static/js/2.bb0cac68.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.bee552dbb8af3d22a46a4135071e7506.js": "/precache-manifest.bee552dbb8af3d22a46a4135071e7506.js",
+    "precache-manifest.25c1f3fa49045c4e3edc674628a8a98f.js": "/precache-manifest.25c1f3fa49045c4e3edc674628a8a98f.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.bb0cac68.chunk.js.LICENSE.txt": "/static/js/2.bb0cac68.chunk.js.LICENSE.txt",
     "static/media/all.css": "/static/media/fa-solid-900.cdfec5cf.woff",
@@ -18,6 +18,6 @@
     "static/css/2.ead3f5b5.chunk.css",
     "static/js/2.bb0cac68.chunk.js",
     "static/css/main.6c55b228.chunk.css",
-    "static/js/main.badab950.chunk.js"
+    "static/js/main.618354e4.chunk.js"
   ]
 }

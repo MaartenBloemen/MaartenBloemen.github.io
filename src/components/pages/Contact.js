@@ -41,27 +41,15 @@ export default () => {
                     </div>
                     <div className="block-content mb-100 ">
                         <div className="row">
-                            <div className="col-md-12  ">
+                            <div className="col-md-12">
                                 <div className="sub-title mb-40">
                                     <h2 className="uppercase">Personal Info</h2>
                                 </div>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="block-info ">
-                                <div className="col-md-4">
-                                    <div className="info">
-                                        <div className="ico mb-20">
-                                            <i className="fa fa-map-marker-alt"/>
-                                        </div>
-                                        <h5 className="mb-20">Drop on in</h5>
-                                        <p>
-                                            Nieuwstraat 102
-                                            <br/> 3550 Heusden-Zolder
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 ">
+                            <div className="block-info">
+                                <div className="col-md-6">
                                     <div className="info">
                                         <div className="ico mb-20">
                                             <i className="fa fa-mobile-alt"/>
@@ -72,7 +60,7 @@ export default () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-md-6">
                                     <div className="info">
                                         <div className="ico mb-20">
                                             <i className="fa fa-paper-plane"/>

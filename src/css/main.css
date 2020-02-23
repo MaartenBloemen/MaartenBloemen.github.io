@@ -1,5 +1,3 @@
-/** Header **/
-
 .img-profile {
     position: relative;
 }
@@ -178,10 +176,6 @@
 
 }
 
-/** End header **/
-
-/** Tabs sections **/
-
 .content {
     padding: 100px;
     position: relative;
@@ -231,9 +225,6 @@
 .footer.col-md-1 {
     width: 9.33333%;
 }
-
-
-/** About tab **/
 
 p.lead-intro {
     padding: 0 80px;
@@ -1178,12 +1169,6 @@ ul.hb-list li h6 {
     top: -1px;
 }
 
-
-/** End blog tab **/
-
-
-/** Contact tab **/
-
 .contact-form, .reply-form {
     position: relative;
 }
@@ -1292,15 +1277,6 @@ ul.hb-list li h6 {
     color: #999999;
 }
 
-
-/** End contact tab **/
-
-
-/** End tabs section **/
-
-
-/** Footer **/
-
 .footer {
     position: relative;
 }
@@ -1402,10 +1378,6 @@ ul.hb-list li h6 {
     white-space: nowrap;
 }
 
-/** End footer **/
-
-
-/** Media queries **/
 
 @media screen and (max-width: 1366px) {
     .block-nav-work li a {
@@ -2364,7 +2336,3 @@ ul.hb-list li h6 {
     }
 
 }
-
-
-/* -------------------- End media queries -------------------- */
-

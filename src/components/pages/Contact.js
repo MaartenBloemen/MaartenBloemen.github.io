@@ -1,6 +1,85 @@
-import React from 'react';
+import React, {useMemo} from 'react';
+import {useForm} from '../../hooks/useForm';
+import './Contact.scss';
 
 export default () => {
+    const {
+        values,
+        errors,
+        success,
+        handleChange,
+        handleSubmit,
+    } = useForm();
+
+    const renderForm = useMemo(() => {
+        if (!success) {
+            return (
+                <form className="contact-form" onSubmit={handleSubmit} noValidate>
+                    <div className="input-columns clearfix">
+                        <div className="column1">
+                            <div className="column-inner">
+                                <input
+                                    className={errors.name ? 'is-invalid' : null}
+                                    type="text"
+                                    placeholder="Name"
+                                    value={values.name}
+                                    name="name"
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div className="column2">
+                            <div className="column-inner">
+                                <input
+                                    className={errors.mail ? 'is-invalid' : null}
+                                    type="text"
+                                    placeholder="Email"
+                                    value={values.mail}
+                                    name="mail"
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <input
+                        className={errors.subject ? 'is-invalid' : null}
+                        type="text"
+                        placeholder="Subject"
+                        value={values.subject}
+                        name="subject"
+                        onChange={handleChange}
+                        required
+                    />
+                    <textarea
+                        className={errors.message ? 'is-invalid' : null}
+                        name="message"
+                        placeholder="Message"
+                        cols="45"
+                        rows="7"
+                        value={values.message}
+                        onChange={handleChange}
+                        required
+                    />
+                    <input
+                        type="submit"
+                        value="Submit Form"
+                        className="but opc submit"
+                    />
+                </form>
+            );
+        }
+        return (
+            <div className="alert alert-success" role="alert">
+                <h4 className="alert-heading">Message submitted!</h4>
+                <p>
+                    Thank you! Your message was submitted successfully, you will hear from me as soon as possible!
+                </p>
+            </div>
+        );
+    }, [success, values, errors]);
+
     return (
         <section id="contact" className="bg-white t-center">
             <div className="contact">
@@ -67,8 +146,10 @@ export default () => {
                                         </div>
                                         <h5 className=" mb-20">Let's connect</h5>
                                         <p>
-                                            LinkedIn : <a href="https://www.linkedin.com/in/maarten-bloemen/" target='_blank'>maarten-bloemen</a>
-                                            <br/> Instagram : <a href="https://www.instagram.com/maarten.bloemen3/" target='_blank'>maarten.bloemen3</a>
+                                            LinkedIn : <a href="https://www.linkedin.com/in/maarten-bloemen/"
+                                                          target='_blank'>maarten-bloemen</a>
+                                            <br/> Instagram : <a href="https://www.instagram.com/maarten.bloemen3/"
+                                                                 target='_blank'>maarten.bloemen3</a>
                                         </p>
                                     </div>
                                 </div>
@@ -87,26 +168,7 @@ export default () => {
                         <div className="row">
                             <div className="col-md-12">
                                 <div className="block-reach">
-                                    <form className="contact-form" method="post" action="">
-                                        <div className="input-columns clearfix">
-                                            <div className="column1">
-                                                <div className="column-inner">
-                                                    <input type="text" placeholder="Name" value="" id="name"
-                                                           name="name"/>
-                                                </div>
-                                            </div>
-                                            <div className="column2">
-                                                <div className="column-inner">
-                                                    <input type="text" placeholder="Email" value="" id="email"
-                                                           name="email"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <input type="text" placeholder="Subject" value="" id="subject" name="subject"/>
-                                        <textarea name="message" placeholder="Message" id="message" cols="45"
-                                                  rows="7"/>
-                                        <input type="submit" value="Submit Form" className="but opc submit"/>
-                                    </form>
+                                    {renderForm}
                                 </div>
                             </div>
                         </div>

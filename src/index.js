@@ -6,6 +6,7 @@ import './css/main.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import '@fortawesome/fontawesome-free/css/all.css';
+import '@fortawesome/fontawesome-free/scss/brands.scss';
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

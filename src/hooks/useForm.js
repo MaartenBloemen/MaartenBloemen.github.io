@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
-
-const slackUrl = 'https://hooks.slack.com/services/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';
+import {baseUrl} from "../constants/genericConstants";
 
 const initialFormState = {
     name: '',
@@ -37,7 +36,7 @@ const postDataToSlack = (name, mail, subject, message) => {
         username: 'SiteNotification',
         icon_emoji: ':loud_sound:'
     };
-    return axios.post(slackUrl, JSON.stringify(slackData), {
+    return axios.post(baseUrl, JSON.stringify(slackData), {
         withCredentials: false,
         transformRequest: [(data, headers) => {
             delete headers.post["Content-Type"]

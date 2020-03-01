@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import HoverImage from './hoverImage/HoverImage';
+import profileImage from "../../img/profile-2.png";
 
 export default () => {
     const [activePage, setActivePage] = useState(1);
@@ -14,7 +14,7 @@ export default () => {
             <header id="header">
                 <div className="main-header">
                     <div className="img-profile">
-                        <HoverImage/>
+                        <img src={profileImage} alt="" />
                         <div className="name-profile t-center">
                             <h5 className="uppercase">Maarten Bloemen</h5>
                         </div>

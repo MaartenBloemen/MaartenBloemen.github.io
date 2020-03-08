@@ -3,7 +3,7 @@ import {skills} from '../../constants/resumeConstants';
 
 export default () => {
     const skillScore = useCallback((score) => {
-        return [...Array(10)].map((_, i) =>
+        return (Array(10).fill(0)).map((_, i) =>
             <span key={i} className={score <= i ? 'transparent' : ''}/>
         );
     }, []);

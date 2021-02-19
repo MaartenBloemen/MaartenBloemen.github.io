@@ -96,30 +96,6 @@ export default () => {
                     </div>
                     <div className="block-content mb-100 ">
                         <div className="row">
-                            <div className="col-md-12  ">
-                                <div className="sub-title mb-40">
-                                    <h2 className="uppercase">map location</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="block-map">
-                                    <div className="gmap_canvas">
-                                        <iframe className="gmap_canvas"
-                                                src="https://maps.google.com/maps?q=nieuwstraat%20102%20heusden-zolder&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                                                title="Google Maps"
-                                                frameBorder="0"
-                                                scrolling="no"
-                                                marginHeight="0"
-                                                marginWidth="0"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="block-content mb-100 ">
-                        <div className="row">
                             <div className="col-md-12">
                                 <div className="sub-title mb-40">
                                     <h2 className="uppercase">Personal Info</h2>
